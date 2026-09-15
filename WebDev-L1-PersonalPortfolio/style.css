@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+}
+
+/* Navigation */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #14213d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #fca311;
+}
+
+/* Hero */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 8%;
+    background-color: #eaf2ff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #14213d;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #14213d;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #fca311;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fca311;
+    color: #14213d;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #14213d;
+    color: #ffffff;
+}
+
+/* Common Section */
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2,
+.skills-section h2,
+.contact-section h2 {
+    font-size: 34px;
+    color: #14213d;
+    margin-bottom: 30px;
+}
+
+/* About */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* Skills */
+.skills-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%;
+    min-width: 250px;
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #14213d;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    display: inline-block;
+    background-color: #fca311;
+    color: #14213d;
+    padding: 8px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #eaf2ff;
+}
+
+.contact-section p {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+.contact-links {
+    color: #14213d;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
